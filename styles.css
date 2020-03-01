@@ -35,6 +35,11 @@ a {
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.1);
 }
 
 .skip-link {
@@ -50,17 +55,13 @@ a {
   left: 0;
 }
 
-/* span {
-    display: inline-block;
-} */
-
 /* Header hero  */
 
 header {
     height: 100vh;
+    min-height: 600px;
     background-image: url(assets/image-1.jpg);
     background-size: cover;
-    /* position: relative; */
 }
 
 .heading {
@@ -74,8 +75,8 @@ h1 {
     text-transform: uppercase;
     text-align: right;
     position: absolute;
-    left: 60%;
-    top: 5%;
+    left: 55%;
+    margin-top: 10%;
     line-height: 117px;
     
 }
@@ -88,6 +89,15 @@ h5 {
      color: #fcfcfc;
      text-transform: uppercase;
      font-size: 3rem;
+}
+
+i.fa-bars {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 3rem;
+    padding: 5px;
+    visibility: hidden;  
 }
 
 .fas {
@@ -128,7 +138,7 @@ span {
 
 .suzies-story {
     background-color: #152d20;
-    padding: 7%;
+    padding: 7% 0;
 }
 
 .suzies-story img {
@@ -173,7 +183,6 @@ span {
 }
 
 .friends-heading {
-    /* width: 25%; */
     margin: 0 auto 5%;
 }
 
@@ -185,7 +194,6 @@ span {
     width: 29%;
     max-width: 100%;
     margin: 1%;
-    /* float: left; */
 }
 
 /* Other links section */
@@ -216,7 +224,6 @@ span {
     width: 50%;
     float: left;
     margin: 0 auto;
-    /* text-align: left; */
    
 }
 
@@ -264,7 +271,7 @@ footer {
 }
 
 h5 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin-bottom: 3%;
 }
 
@@ -274,7 +281,7 @@ footer .wrapper {
 }
 
 .bottom-nav li {
-    margin-bottom: 3%;
+    padding: 2.5%;
 }
 
 .bottom-nav li a {
@@ -326,66 +333,148 @@ footer .wrapper {
     padding: .5%;
 }
 
-@media(max-width: 1122px){
+@media(max-width: 1208px){
     .square1, .square4 {
         padding-top: 3.5%;
     }
 }
 
 @media(max-width: 1093px){
-    .square1, .square4 {
-        padding-top: 3%;
-    }
-
-    .square1 h2, .square4 h2 {
-        font-size: 3rem;
-    }
-
-    .friends img {
-        width: 28%
-    }
-}
-
-@media(max-width: 942px){
-
-}
-
-@media(max-width: 320px){
-    .wrapper {
-        width: 95%;
-    }
 
     header {
-        /* background-size: cover; */
+        background-size: cover;
         background-position: 35% 100%;
 
     }
 
-    h1 {
-        font-size: 2.5rem;
-        font-family: Fredericka the Great;
-        text-align: left;
-        line-height: normal;
-        left: 1%;
+    .square1, .square4 {
+        padding: 3%;
     }
 
-    .nav-top {
-        visibility: hidden;
+    h5 {
+        font-size: 1.7rem;
+    }
+
+    footer a, footer p {
+        font-size: 1.6rem;
+    }
+
+    .read-more2 {
+        padding: 5px;
+        font-size: 1.5rem;
+        line-height: 20px;
+    }
+
+}
+
+@media(max-width: 889px){
+
+    h1 {
+        text-align: left;
+        font-size: 7.5rem;
+        line-height: 75px;
+        left: 55%;
+    }
+
+    .square1, .square4{
+        padding: 1.5%;
+    }
+
+    .read-more2 {
+        padding: 4px;
+        font-size: 1.3rem;
+    }
+
+    .footer1 {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    footer .wrapper {
+        padding: 2% 0;
+        text-align: center;
+    }
+
+    ul .bottom-nav {
+        padding: 2% 0;
+    }
+
+    .footer1 li {
+        display: inline-block;
+        font-size: 2rem;
+        margin: 2%;  
+    }
+
+    .footer2 {
+        text-align: left;
+        width: 50%;
+    }
+
+    .footer3 {
+        width: 50%;
+    }
+}
+
+@media(max-width: 822px){
+
+     h1 {
+        font-size: 7.7rem;
+        text-align: right;
+        line-height: 70px;
     }
 
     .social i {
-        display: none;
+        left: 75%;
+        bottom: 7%;
     }
 
-    /* Suzie's story */
+    .suzies-story h2, .friends h2 {
+        font-size: 4rem;
+    }
+
+    .link1, .link2, .link3 {
+        font-size: 1rem;
+    }
+
+    .blog-square{
+        background-color: #c3d3cb;
+    }
+
+    .square1, .square4 {
+        background-color: white;
+        text-align: center;
+    }
+
+    .square1, .square2, .square3, .square4 {
+        float: none;
+        width: 50%;
+    }
+
+}
+
+@media(max-width: 761px) {
+
+    .nav-top a {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 7rem;
+        left: 45%;
+    }
+
+    .suzies-story {
+        text-align: center;
+    }
 
     .suzies-story img {
         float: none;
-        width: 100%;
+        width: 60%;
     }
 
     .suzies-story h2{
-        font-size: 3rem;
+        font-size: 4rem;
         margin-top: 5%;
     }
 
@@ -393,72 +482,28 @@ footer .wrapper {
         width: 100%;
     }
 
-    .read-more1 {
-        text-align: center;
-    }
-
-    .friends-heading h2 {
-        font-size: 2.8rem;
-    }
-
-    .friends-gallery:nth-child(3) {
-        display: none; 
-    }
-
-    /* other links */
-
-    /* .other-links {
-        margin: 0 auto;
-    } */
-
-    .link1, .link2, .link3 {
-        float: none;
-        margin: 0 auto;
-        text-align: center;
-        padding: 5%;
-    }
-
-    .link1 h5, .link2 h5, .link3 h5 {
-        font-size: 2.5rem;
-        margin: 0 auto;
-    }
-
-    .link1 i, .link2 i, .link3 i {
-        font-size: 5rem;
-    }
-
-    /* blog square */
-
-    .blog-square {
-        position: relative;
-    }
-
-    /* .square1 {
-        position: absolute;
-        top: 50%;
-    }
-
-    .square2 {
-        position: absolute;
-        bottom: 50%;
-    } */
-
     .square1, .square2, .square3, .square4 {
-        float: none;
-        width: 100%;
-    }
-
-    .square2 {
-        clear: both;
+        width: 75%;
     }
 
     .square1, .square4 {
-        text-align: center;
+        padding: 4% 3%;
     }
 
-    .square1 h2, .square4 h2 {
-        font-size: 2rem;
-        margin: 4%;;
+    .read-more2 {
+    padding: 6px;
+    margin-top: 3%;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 29px;
+    }
+
+    footer ul a {
+        font-size: 1.5rem;
+    }
+
+    .footer2 {
+        text-align: center;
     }
 
     .footer1, .footer2, .footer3 {
@@ -466,15 +511,14 @@ footer .wrapper {
         width: 100%;
     }
 
-    .footer1 li {
-        float: left;
-        font-size: 1.5rem;
-        margin: 4%;
+    .footer2 h5{
+        margin-top: 2%;
+        font-size: 2rem;
     }
 
-    .footer2 h5, .footer3 h5 {
+    .footer3 h5 {
         font-size: 2rem;
-        margin: 10% 0 2% 0;
+        margin: 5% 0 2% 0;
     }
 
     .footer2 p{
@@ -482,7 +526,6 @@ footer .wrapper {
     }
 
     .footer2 input {
-        display: inline-block;
         width: 100%;
     }
 
@@ -503,4 +546,124 @@ footer .wrapper {
         font-size: 1.2rem;
         padding: 2%;
     }
+}
+
+@media(max-width: 595px){
+    h1 {
+        font-size: 5.5rem;
+        line-height: normal;
+        left: 50%;
+    }
+
+}
+
+@media(max-width: 500px){
+    .wrapper {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        text-align: left;
+        left: 1%;
+    }
+
+    .nav-top {
+        visibility: hidden;
+    }
+
+    i.fa-bars {
+            visibility: visible;
+        }
+
+    .social i {
+        display: none;
+    }
+
+    /* Suzie's story */
+
+    .suzies-story img {
+        float: none;
+        width: 90%;
+    }
+
+    .suzies-story h2{
+        font-size: 3rem;
+        margin-top: 5%;
+    }
+
+    .suzies-story-text {
+        width: 100%;
+    }
+
+    .read-more1 {
+        text-align: center;
+    }
+
+    .friends-heading h2 {
+        font-size: 2.8rem;
+    }
+
+    .friends-heading {
+        width: 100%;
+    }
+
+    .friends-gallery img {
+        width: 45%;
+    }
+
+    .friends-gallery img:nth-child(3) {
+        display: none;
+    }
+
+    .link1, .link2, .link3 {
+        float: none;
+        margin: 0 auto;
+        padding: 5%;
+    }
+
+    .link1 a, .link2 a, .link3 a {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .link1 h5, .link2 h5, .link3 h5 {
+        font-size: 2.5rem;
+    }
+
+    .link1 i, .link2 i, .link3 i {
+        font-size: 5rem;
+    }
+
+    /* blog square */
+
+    .square1, .square2, .square3, .square4 {
+        width: 100%;
+    }
+
+    .square1, .square2 {
+        float: right;
+        width: 100%;
+    }
+
+    .square1, .square4 {
+        text-align: center;
+    }
+
+    .square1 h2, .square4 h2 {
+        font-size: 2rem;
+        margin: 4%;;
+    }
+
+    .footer1 li {
+        font-size: 1.5rem;
+        margin: 4%;
+    }
+
+    @media(max-width: 480px){
+        .bottom-nav li {
+            margin: 2.5%;
+        }
+    }
+   
 }
